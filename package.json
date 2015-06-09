@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "gulp build"
+    "postinstall": "gulp"
   },
   "author": "Paul Grock <paulgrock@gmail.com> (http://paulgrock.com/)",
   "license": "MIT",

@@ -5,14 +5,20 @@ var ary = [1, 2, 3, 4, 5];
 import {data as somethingGeneric} from './exported';
 console.log(somethingGeneric().uno);
 
+// Arrow functions
+var squares = ary.map((item)=> item * item);
+// These are functionally equivalant
+// var squares = ary.map(function(item) {
+//   return item * item;
+// });
+console.log(squares);
+
 
 // Let
-var squares = ary.map((item)=> item * item);
 for (var i = 0, len = squares.length; i < len; i++) {
-    let square = squares[i];
+    var square = squares[i];
 }
-// console.log(square); errors out
-console.log(squares);
+// console.log(square); // errors out
 
 
 // CONSTANTS
@@ -21,7 +27,8 @@ const SOMETHING_YOU_CANT_CHANGE = 10;
 
 
 // TemplateLiterals with interpoation
-var templateLiteral = `foo + ${SOMETHING_YOU_CANT_CHANGE}`;
+// var templateLiteral = "foo" + SOMETHING_YOU_CANT_CHANGE;
+var templateLiteral = `foo ${SOMETHING_YOU_CANT_CHANGE}`;
 console.log(`template literal ${templateLiteral}`);
 
 
@@ -78,6 +85,7 @@ console.log(b);
 var obj1 = {
     [`foo${ary[0]}`]: 19
 };
+// obj1[`foo${ary[0]}`] = 19
 console.log("obj1: ", obj1);
 
 
@@ -118,3 +126,9 @@ let shorthandObj = {
   ary, anotherObj
 }
 console.log("shorthandObj: ", shorthandObj);
+
+class Foo {
+  constructor() {
+
+  }
+}
