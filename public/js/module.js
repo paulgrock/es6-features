@@ -18,7 +18,7 @@ console.log(squares);
 for (var i = 0, len = squares.length; i < len; i++) {
     let square = squares[i];
 }
-console.log(square); // errors out
+// console.log(square); // errors out
 
 
 // CONSTANTS
