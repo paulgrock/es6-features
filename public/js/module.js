@@ -16,9 +16,9 @@ console.log(squares);
 
 // Let
 for (var i = 0, len = squares.length; i < len; i++) {
-    var square = squares[i];
+    let square = squares[i];
 }
-// console.log(square); // errors out
+console.log(square); // errors out
 
 
 // CONSTANTS
@@ -27,7 +27,7 @@ const SOMETHING_YOU_CANT_CHANGE = 10;
 
 
 // TemplateLiterals with interpoation
-// var templateLiteral = "foo" + SOMETHING_YOU_CANT_CHANGE;
+// var templateLiteral = "foo " + SOMETHING_YOU_CANT_CHANGE;
 var templateLiteral = `foo ${SOMETHING_YOU_CANT_CHANGE}`;
 console.log(`template literal ${templateLiteral}`);
 
@@ -132,3 +132,6 @@ class Foo {
 
   }
 }
+
+
+// Promises, proper tail calls, classes, sets, maps, weaksets, weakmaps, symbols
