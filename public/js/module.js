@@ -127,6 +127,8 @@ let shorthandObj = {
 }
 console.log("shorthandObj: ", shorthandObj);
 
+
+// ES6 classes
 class Foo {
   constructor() {
 
@@ -134,4 +136,4 @@ class Foo {
 }
 
 
-// Promises, proper tail calls, classes, sets, maps, weaksets, weakmaps, symbols
+// Promises, proper tail calls, sets, maps, weaksets, weakmaps, symbols
